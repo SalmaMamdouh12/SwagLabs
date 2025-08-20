@@ -1,38 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Create Positive Scenarios for Login Features" parallel="tests" thread-count="3">
+<suite name="Create Positive Scenarios for Login Features">
     <parameter name="browser" value=""/>
 
-    <test name="Check Positive Scenario for Login Feature in SwagLabs Web App on Chrome">
-        <parameter name="browser" value=""/>
-        <classes>
-            <class name="testcases.TC01_Login">
-                <methods>
-                    <include name="loginWithValidData_P"/>
-                </methods>
-            </class>
-        </classes>
-    </test>
-    <test name="Check Positive Scenario for Login Feature in SwagLabs Web App on Firefox">
-        <parameter name="browser" value="firefox"/>
-        <classes>
-            <class name="testcases.TC01_Login">
-                <methods>
-                    <include name="loginWithValidData_P"/>
-                </methods>
-            </class>
-        </classes>
-    </test>
-    <test name="Check Positive Scenario for Login Feature in SwagLabs Web App on Edge">
-        <parameter name="browser" value="edge"/>
-        <classes>
-            <class name="testcases.TC01_Login">
-                <methods>
-                    <include name="loginWithValidData_P"/>
-                </methods>
-            </class>
-        </classes>
-    </test>
+        <test name="Add Random Products To Cart">
+            <classes>
+                <class name="testcases.TC02_AddSuccessfulOrder">
+                    <methods>
+                        <include name="createSuccessfulOrderWithAddProducts_P"/>
+                    </methods>
+                </class>
+            </classes>
+        </test>
+
+
+</suite>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--    <test name="Check Positive Scenario for Login Feature in SwagLabs Web App on Chrome">-->
+<!--        <parameter name="browser" value=""/>-->
+<!--        <classes>-->
+<!--            <class name="testcases.TC01_Login">-->
+<!--                <methods>-->
+<!--                    <include name="loginWithValidData_P"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+    <!--    <test name="Check Positive Scenario for Login Feature in SwagLabs Web App on Firefox">-->
+<!--        <parameter name="browser" value="firefox"/>-->
+<!--        <classes>-->
+<!--            <class name="testcases.TC01_Login">-->
+<!--                <methods>-->
+<!--                    <include name="loginWithValidData_P"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Check Positive Scenario for Login Feature in SwagLabs Web App on Edge">-->
+<!--        <parameter name="browser" value="edge"/>-->
+<!--        <classes>-->
+<!--            <class name="testcases.TC01_Login">-->
+<!--                <methods>-->
+<!--                    <include name="loginWithValidData_P"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
 
 
 <!--    <test name="Add Random Products To Cart">-->
@@ -65,4 +93,3 @@
 <!--            </class>-->
 <!--        </classes>-->
 <!--    </test>-->
-</suite>

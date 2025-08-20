@@ -3,7 +3,7 @@
 <suite name="Create Positive Scenarios for Login Features">
     <parameter name="browser" value="firefox"/>
 
-    <test name="Check Positive Scenario for Login Feature in SwagLabs Web App on Chrome">
+    <test name="Check Positive Scenario for Login Feature in SwagLabs Web App on Firefox">
         <classes>
             <class name="testcases.TC01_Login">
                 <methods>

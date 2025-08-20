@@ -3,9 +3,8 @@
 <suite name="All Test Suite">
     <parameter name="browser" value=""/>
     <suite-files>
-        <suite-file path="src/test/resources/suites/PositiveScenariosChrome.xml"/>
-        <suite-file path="src/test/resources/suites/PositiveScenariosFirefox.xml"/>
-        <suite-file path="src/test/resources/suites/PositiveScenariosEdge.xml"/>
+       <suite-file path="src/test/resources/suites/PositiveScenariosChrome.xml"/>
+
     </suite-files>
 
 </suite>

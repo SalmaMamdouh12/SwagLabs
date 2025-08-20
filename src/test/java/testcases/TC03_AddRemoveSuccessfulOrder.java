@@ -30,7 +30,6 @@ public class TC03_AddRemoveSuccessfulOrder extends TestBase {
         p05CheckOutStepTwoPage = new P05_checkOutStepTwoPage(getDriver());
         p06CheckOutCompletePage = new P06_checkOutCompletePage(getDriver());
 
-//        p01LoginPage.login(username,password);
         new P01_loginPage(getDriver()).fillUsername(username).fillPassword(password).clickLoginButton();
         totalCalculatedPrice = p02InventoryPage.addRandomProductsToCart(getDriver());
 

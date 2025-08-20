@@ -20,9 +20,7 @@ public class TC02_AddSuccessfulOrder extends TestBase{
     String username = "standard_user";
     String password = "secret_sauce";
     String actualMsg = "THANK YOU FOR YOUR ORDER";
-    String firstName = generateRandomName();
-    String lastName = generateRandomName();
-    String zipCode = generateRandomZipCode();
+
     double totalCalculatedPrice =0;
 
 
@@ -35,6 +33,9 @@ public class TC02_AddSuccessfulOrder extends TestBase{
         p04CheckOutStepOnePage = new P04_checkOutStepOnePage(getDriver());
         p05CheckOutStepTwoPage = new P05_checkOutStepTwoPage(getDriver());
         p06CheckOutCompletePage = new P06_checkOutCompletePage(getDriver());
+        String firstName = generateRandomName();
+        String lastName = generateRandomName();
+        String zipCode = generateRandomZipCode();
 
         new P01_loginPage(getDriver()).fillUsername(username).fillPassword(password).clickLoginButton();
         totalCalculatedPrice = p02InventoryPage.addRandomProductsToCart(getDriver());

@@ -3,9 +3,6 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import static util.Utility.generateRandomName;
-import static util.Utility.generateRandomZipCode;
-
 public class P04_checkOutStepOnePage {
 
     WebDriver driver;

@@ -3,8 +3,6 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import static java.lang.Double.parseDouble;
-
 public class P05_checkOutStepTwoPage {
 
     WebDriver driver;

@@ -42,6 +42,7 @@ To set up the SwagLabs application locally, follow these steps:
 
 ## Usage
 * User Guide: Refer to the User Guide for detailed information on how to use the SwagLabs application.
+
 ## ![Usage Example](run.gif)
 
 ## Contributing

@@ -17,13 +17,7 @@ public class TC01_Login extends TestBase {
 
 
         //test steps
-//        loginPage.login(username, password);
-//        loginPage.fillUsername(username).fillPassword(password).clickLoginButton();
-
         new P01_loginPage(getDriver()).fillUsername(username).fillPassword(password).clickLoginButton();
-//        productPage.selectRandomProdts().clickShopCard();
-//        checkPage.clickCheckoutButton();
-//        secondCheckoutPage.clickContinueButton();
 
         //assertion
         Assert.assertTrue(new P01_loginPage(getDriver()).isHomePageTitleShown(actualHomePageTitle), "Assertion Msg: Login failed");

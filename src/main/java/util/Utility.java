@@ -3,9 +3,7 @@ package util;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.io.FileWriter;
-import java.io.IOException;
 import java.util.Random;
-import java.util.List;
 
 
 public class Utility {
@@ -18,6 +16,7 @@ public class Utility {
             "Joseph", "Jessica", "Thomas", "Sarah", "Charles", "Karen"
             // Add more first names if you want
     };
+
     private static final String[] LAST_NAMES = {
             "Smith", "Johnson", "Williams", "Brown", "Jones", "Garcia", "Miller",
             "Davis", "Rodriguez", "Martinez", "Hernandez", "Lopez", "Gonzalez",
@@ -26,6 +25,7 @@ public class Utility {
     };
 
     public static String generateRandomName() {
+        random = new Random();
         String firstName = FIRST_NAMES[random.nextInt(FIRST_NAMES.length)];
         String lastName = LAST_NAMES[random.nextInt(LAST_NAMES.length)];
 

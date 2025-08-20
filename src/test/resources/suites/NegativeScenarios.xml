@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Create Negative Scenarios for Login Features">
+    <test name="Check Negative Scenario for Login Feature in SwagLabs Web App">
+<parameter name="browser" value="edge"/>
+    <classes>
+        <class name="testcases.TC01_Login">
+            <methods>
+                <exclude name="loginWithValidData_P"/>
+            </methods>
+        </class>
+    </classes>
+    </test>
+</suite>

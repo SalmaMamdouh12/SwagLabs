@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Create Positive Scenarios for Login Features">
+    <parameter name="browser" value="firefox"/>
+
+    <test name="Check Positive Scenario for Login Feature in SwagLabs Web App on Chrome">
+        <classes>
+            <class name="testcases.TC01_Login">
+                <methods>
+                    <include name="loginWithValidData_P"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+<!--    <test name="Add Random Products To Cart">-->
+<!--        <classes>-->
+<!--            <class name="testcases.TC02_AddSuccessfulOrder">-->
+<!--                <methods>-->
+<!--                    <include name="createSuccessfulOrderWithAddProducts_P"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Create Successful Order With Add-Remove">-->
+<!--        <classes>-->
+<!--            <class name="testcases.TC03_AddRemoveSuccessfulOrder">-->
+<!--                <methods>-->
+<!--                    <include name="createSuccessfulOrderWithAddRemoveProducts_P"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+
+<!--    <test name="Exporting Products Data">-->
+<!--        <classes>-->
+<!--            <class name="testcases.TC04_ExportProducts">-->
+<!--                <methods>-->
+<!--                    <include name="extractProductData_P"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>
